@@ -30,6 +30,7 @@ async function populateCarouselImage() {
 
         const carouselParent = document.createElement('div');
         carouselParent.setAttribute('class', 'carousel-item c-item');
+        carouselParent.setAttribute('data-bs-interval', "20000");
 
         const carouselImg = document.createElement('img');
         carouselImg.setAttribute('src', image);
@@ -38,7 +39,8 @@ async function populateCarouselImage() {
         const carouselCaptionParent = document.createElement('div');
         carouselCaptionParent.setAttribute('class', 'carousel-caption d-none d-md-block');
 
-        const carouselName = document.createElement('h5');
+        const carouselName = document.createElement('h3');
+        carouselName.setAttribute('class', 'text-uppercase');
         carouselName.innerText = name;
 
         const carouselPlanet = document.createElement('h4');
@@ -69,7 +71,7 @@ async function populateCarouselImage() {
 
     });
 
-    console.log(sites);
+    // console.log(sites);
 }
 
 
