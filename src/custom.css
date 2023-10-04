@@ -7,6 +7,18 @@
   }
    */
 
+   header {
+      width: 100vw;
+   }
+
+   main {
+      background-image: url(./images/tarantula-nebula.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      /* background-color: black; */
+      filter: grayscale(65%);
+   }
 
    .c-item {
       height: 925px;
@@ -26,4 +38,18 @@
 
    .card-wrapper {
       column-gap: 15px;
+   }
+
+   #ship-facts {
+      height: 800px;
+      width: 100%;
+      text-align: center;
+   }
+
+   #cruise-ship {
+      padding-top: 100px;;
+      align-items: center;
+      justify-content: flex-end;
+      width: 1000px;
+      z-index: 2;
    }
