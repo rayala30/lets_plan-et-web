@@ -12,12 +12,14 @@
    }
 
    main {
-      background-image: url(./images/tarantula-nebula.png);
-      background-size: cover;
-      background-repeat: no-repeat;
       width: 100vw;
       /* background-color: black; */
-      filter: grayscale(65%);
+      background-image: radial-gradient(circle at 20% 30%, #000000, transparent),
+                    /* Second radial gradient layer */
+                    radial-gradient(circle at 80% 70%, #974c21, transparent),
+                    /* Third radial gradient layer */
+                    radial-gradient(circle at 50% 50%, #262675, transparent);
+
    }
 
    .c-item {
@@ -50,6 +52,6 @@
       padding-top: 100px;;
       align-items: center;
       justify-content: flex-end;
-      width: 1000px;
+      width: 900px;
       z-index: 2;
    }
