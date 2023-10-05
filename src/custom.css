@@ -22,6 +22,15 @@
 
    }
 
+   
+   
+
+   footer {
+      width: 100%;
+      z-index: 1;
+      color: white;
+   }
+
    .c-item {
       height: 925px;
    }
@@ -39,7 +48,7 @@
    }
 
    .card-wrapper {
-      column-gap: 15px;
+      column-gap: 20px;
    }
 
    #ship-facts {
@@ -55,3 +64,39 @@
       width: 900px;
       z-index: 2;
    }
+
+   #copyright {
+      font-size: 14px;;
+   }
+
+   .card {
+      width: 400px;
+      height: 500px;
+      background-color: #D9D9D9;
+   }
+  
+
+   .planet-card-img {
+      height: 200px;
+      width: auto;
+      object-fit: cover;
+   }
+
+
+  .dest-list {
+      font-size: 16px;
+      font-weight: bold;
+  }   
+
+  .dest-description {
+   font-size: 16px;
+}
+
+.learn-more-btn {
+   background-color: #AFAFAF;
+   border-color: #AFAFAF;
+   color: black;
+   font-weight: bold;
+   margin-right: 16px;
+   margin-bottom: 16px;;
+}
