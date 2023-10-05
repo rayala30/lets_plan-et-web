@@ -72,7 +72,9 @@
    .card {
       width: 400px;
       height: 500px;
-      background-color: #D9D9D9;
+      background-color: black;
+      /* overflow */
+      /* white-space */
    }
   
 
@@ -93,10 +95,25 @@
 }
 
 .learn-more-btn {
-   background-color: #AFAFAF;
-   border-color: #AFAFAF;
+   background-color: #F28300;
+   border-color: #F28300;
    color: black;
    font-weight: bold;
    margin-right: 16px;
-   margin-bottom: 16px;;
+   margin-bottom: 16px;
+}
+
+#view-itin-btn {
+   background-color: #F28300;
+   border-color: #F28300;
+   color: black;
+   font-weight: bold;
+}
+
+.modal-dialog, .modal-content {
+   height: 850px;
+}
+
+.modal-content {
+   background-color: rgb(231, 177, 177);
 }

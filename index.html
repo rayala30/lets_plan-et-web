@@ -14,8 +14,6 @@
 </head>
 
 <body>
-  <div class="Stars absolute top-0 left-0 w-px h-px"></div>
-
   
   <header>
     <nav class="navbar navbar-expand-sm bg-transparent fixed-top" data-bs-theme="dark" style="background-color: black;">
@@ -32,11 +30,11 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li> -->
   
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#packages" style="color: white;">Packages</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#itinerary" style="color: white;">Itinerary</a>
+              <button id="view-itin-btn" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">Expand Itinerary</button>
             </li>
             
           </ul>
@@ -44,6 +42,9 @@
         </div>
       </div>
     </nav>
+
+<!---HERO CAROUSEL------------------------------------------------------------------------------------------------------------------->  
+
 
     <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel"> 
 
@@ -77,28 +78,10 @@
 
   </header>
 
+<!---FEATURED TRIPS------------------------------------------------------------------------------------------------------------------->  
 
   <main>
-    
-    <section class="modal trip-info" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-      
+   
     <section id="packages" class="pt-5 pb-4">
       
       <h2 class="text-center my-5" style="color: white;">Featured Trips</h2>
@@ -110,7 +93,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/mars-excursion.jpg" class="card-img-top planet-card-img" alt="Mars">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Ares Excursion</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">Olympus Mons | Valles Marineris | Utopian Plain</p>
@@ -118,7 +101,12 @@
                 
               </div>
               <div class="w-100 d-flex justify-content-end">
-                <a href="#" class="btn btn-primary w-50 learn-more-btn">Learn more</a>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                   Learn more
+                </button>
+
+                
               </div>
             </div>
           </div>
@@ -126,7 +114,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/jupiter-flyby.png" class="card-img-top planet-card-img" alt="Jupiter">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Zeus Orbit</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">Galilean Satellites | The Great Red Spot | Oval BA</p>
@@ -142,7 +130,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/saturn-flyby.png" class="card-img-top planet-card-img" alt="Jupiter">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Cronos Flyby</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">Rings | Hexagon | Titan</p>
@@ -160,6 +148,7 @@
 
       </div>
 
+<!---UPCOMING TRIPS------------------------------------------------------------------------------------------------------------------->  
 
       <h2 class="text-center my-5" style="color: white;">Upcoming Trips</h2>
 
@@ -170,7 +159,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/moon.jpg" class="card-img-top planet-card-img" alt="Moon">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Lunar Resort</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">The Moon | Lunar Base</p>
@@ -186,7 +175,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/asteroid-belt.png" class="card-img-top planet-card-img" alt="Asteroid Belt">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Asteroid Hop</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">Ceres | Vesta</p>
@@ -201,7 +190,7 @@
           <div class="col-lg pt-2 pb-2">
             <div class="card border-0">
               <img src="./src/images/neptune.jpg" class="card-img-top planet-card-img" alt="Neptune">
-              <div class="card-body">
+              <div class="card-body" style="color: white;">
                 <h5 class="card-title fw-bold">Poseidon Sightseeing</h5>
                 <h6 class="destination">Destinations</h6>
                 <p class="card-text dest-list">Triton | Rings</p>
@@ -220,15 +209,20 @@
     </section>
 
 
+<!---SHIP FACTS------------------------------------------------------------------------------------------------------------------->      
+
     <section id="ship-facts">
       <h2 class="text-center my-5" style="color: white;">Our Space Cruiser</h2>
       <img src="./src/images/cruise-ship2.png" alt="" id="cruise-ship">
 
     </section>
 
+
+
+<!---ITINERARY OFFCANVAS------------------------------------------------------------------------------------------------------------------->      
+
     <section class="pt-5 pb-4 text-center">
       <div>
-        <button id="view-itin-btn" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">Expand Itinerary Selection</button>
   
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
           <div class="offcanvas-header">
@@ -242,16 +236,53 @@
       </div>
     </section>
 
+<!---PACKAGE MODALS------------------------------------------------------------------------------------------------------------------->  
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Ares Excursion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="div container-fluid">
+
+          <div class="row">
+            <div class="col-sm-8">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                  Level 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save to Itinerary</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->  
+
+
     <footer class="text-center" id="copyright">
       <div>©Lets Plan-et 2023</div>
     </footer>
+
+<!---------------------------------------------------------------------------------------------------------------------->  
   
   </main>
 
-
-  
-
-  
 </body>
 
 </html>
