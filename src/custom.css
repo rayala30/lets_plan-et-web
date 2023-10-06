@@ -120,8 +120,8 @@
 }
 
 .learn-more-btn {
-   background-color: #F28300;
-   border-color: #F28300;
+   background-color: #ff9f2e;
+   border-color: #ff9f2e;
    color: black;
    font-weight: bold;
    margin-right: 16px;
@@ -137,15 +137,15 @@
 }
 
 .save-itin-btn {
-   background-color: #F28300;
-   border-color: #F28300;
+   background-color: #ff9f2e;
+   border-color: #ff9f2e;
    color: black;
    font-weight: bold;
 }
 
 #view-itin-btn {
-   background-color: #F28300;
-   border-color: #F28300;
+   background-color: #ff9f2e;
+   border-color: #ff9f2e;
    color: black;
    font-weight: bold;
 }
@@ -169,7 +169,7 @@
    ". header"
    "content content"
    ". footer";
-   
+   background-color: #f1f1f1;
 }
 
 .modal-body {
@@ -194,14 +194,14 @@ p.modal-description {
 
 .modal-header {
    grid-area: header;
-   background-color: #F1F1F1;
+   background-color: #ffe5c6;
    border-top-left-radius: 0;
    
 }
 
 .modal-footer {
    grid-area: footer;
-   background-color: #F1F1F1;
+   background-color: #ffe5c6;
    border-bottom-left-radius: 0;
 }
 
@@ -242,7 +242,7 @@ div#left-group {
 div#right-group {
    display: flex;
    flex-direction: column;
-   background-color: #F1F1F1;
+   background-color: #ffe5c6;
    padding-left: 20px;
    padding-right: 20px;
    justify-content: space-evenly;
