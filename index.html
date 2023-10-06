@@ -177,7 +177,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#lunarPackage">
                   Learn more
                 </button>
 
@@ -196,7 +196,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#asteroidPackage">
                   Learn more
                 </button>
 
@@ -215,7 +215,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#neptunePackage">
                   Learn more
                 </button>
 
@@ -256,9 +256,13 @@
           <div class="offcanvas-body">
             <div class="container">
               <div class="saved-package">
-                <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel">Ares Excursion</h1>
-                <img src="./src/images/mars-excursion.jpg" class="banner-img" alt="Mars">
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel" style="text-align: left;">Ares Excursion</h1>
+                <div class="itin-image-btn">
+                  <img src="./src/images/mars-excursion.jpg" class="offcanvas-img" alt="Mars">
+                  <button type="button" class="btn-delete" data-bs-dismiss=""></button>
+                </div>
+
               </div>
             </div>
            
@@ -307,7 +311,7 @@
                 <i class="bi bi-sun"></i>
                 1 Sol
                 <div class="planet-property fw-bold">
-                  24 hrs 40 mins
+                  24H 40M
                 </div>
               </div>
     
@@ -328,7 +332,13 @@
         <div id="right-group">
           <div id="modal-dest-desc">
             <div class="dest-description">Destinations</div>
-            <div class="dest-list">Olympus Mons | Valles Marineris | Utopian Plain</div>
+            <div class="dest-list">
+              <ul class="modal-sites">
+                <li class="list-site" >Olympus Mons</li>
+                <li class="list-site">Valles Marineris</li>
+                <li class="list-site">Utopian Plain</li>
+              </ul>
+            </div>
           </div>
   
           <div class="supply-list">
