@@ -6,6 +6,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" type= "text/css" href="src/custom.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Unica+One&display=swap" rel="stylesheet">
+
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" async="true"></script>
   <script type="module" src="src/js/PlanetService.js"></script>
   <script type="module" src="src/js/App.js"></script>
@@ -87,7 +91,7 @@
 
       <div class="container">
 
-        <div class="row card-wrapper" id="featured-trips">
+        <div class="row" id="featured-trips">
 
           <div class="col-12 col-md-6 col-lg-4 pt-2 pb-2">
             <div class="card border-1 border-white rounded" style="border-radius: 20px;">
@@ -101,7 +105,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                     <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#marsPackage">
                    Learn more
                 </button>
 
@@ -159,7 +163,7 @@
 
       <div class="container">
 
-        <div class="row card-wrapper" id="upcoming-trips">
+        <div class="row" id="upcoming-trips">
 
           <div class="col-12 col-md-6 col-lg-4 pt-2 pb-2">
             <div class="card border-1 border-white rounded" style="border-radius: 20px;">
@@ -245,7 +249,7 @@
   
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight">
           <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel" class="text-uppercase fw-bold fs-3">Itinerary</h5>
+          <h5 id="itineraryLabel" class="text-uppercase fw-bold">Itinerary</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -257,32 +261,87 @@
 
 <!---PACKAGE MODALS------------------------------------------------------------------------------------------------------------------->  
 
-<div class="modal fade" id="aresPackage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal fade" id="marsPackage" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
     <div class="modal-content">
       <div class="modal-header border-0">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Ares Excursion</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="div container-fluid">
+      
+      <div class="modal-body" id="modal-grid">
+        <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel">Ares Excursion</h1>
+        <div class="banner">
+          <img src="./src/images/mars-excursion.jpg" class="banner-img" alt="Mars">
+        </div>
+        <div class="description" id="mars-trip-desc">
+          <h5 class="fw-bold pt-4">Embark on a journey to Mars</h5>
+          <p class="my-2 modal-description">Experience the thrill of an interstellar adventure as you explore the wonders of Mars on this trip. Witness the colossal Olympus Mons, the largest volcano in the solar system. Explore the the magnificent Valles Marineris, the largest and deepest valley. Then, pay homage to space exploration history as we visit the landing sites of NASA’s groundbreaking missions: Viking 1 and Sojourner.</p>
+          <p class="my-2 modal-description">Limited seats available for this once-in-a-lifetime opportunity, so reserve your spot now and be among the few to explore the Red Planet up close!</p>
+        </div>
 
-          <div class="row">
-            <div class="col-sm-8">
-              Level 1: .col-sm-9
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                  Level 2: .col-8 .col-sm-6
+        <div class="overview">
+          <div class="container d-flex align-items-center h-100">
+            <div class="row w-100 text-center">
+              <div class="general-property col-4"> 
+                <i class="bi bi-thermometer-half"></i>
+                Avg. Temp.
+                <div class="planet-property fw-bold">
+                  -63°C
                 </div>
-                <div class="col-4 col-sm-6">
-                  Level 2: .col-4 .col-sm-6
+              </div>
+    
+              <div class="general-property col-4"> 
+                <i class="bi bi-sun"></i>
+                1 Sol
+                <div class="planet-property fw-bold">
+                  24 hrs 40 mins
+                </div>
+              </div>
+    
+              <div class="general-property col-4"> 
+                <i class="bi bi-rocket"></i>
+                Travel Time
+                <div class="planet-property fw-bold">
+                  2 Earth Years
                 </div>
               </div>
             </div>
+  
           </div>
-          
+  
         </div>
+        
+        <div id="modal-dest-desc">
+          <div class="dest-description">Destinations</div>
+          <div class="dest-list">Olympus Mons | Valles Marineris | Utopian Plain</div>
+        </div>
+
+        <div class="supply-list">
+          <h6 class="fw-bold">What to Bring:</h6>
+          <ul>
+            <li>Non-perishable food and snacks</li>
+            <li>Personal radio and communication devices</li>
+            <li>Solar power banks</li>
+            <li>Books and entertainment for in-flight transit</li>
+            <li>Binoculars or telescope for exploration and observation</li>
+            <li>(Optional) Sunblock SPF-100</li>
+          </ul>
+
+          <h6 class="fw-bold">To be supplied:</h6>
+          <ul>
+            <li>Transportation</li>
+            <li>Lodging</li>
+            <li>Space suit and protective gear</li>
+            <li>Oxygen supply</li>
+            <li>Water purification</li>
+            <li>Meals</li>
+            <li>Emergency supplies</li>
+          </ul>
+        </div>
+
+
       </div>
+      
       <div class="modal-footer border-0">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>

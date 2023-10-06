@@ -11,6 +11,10 @@
       width: 100vw;
    }
 
+   body {
+      font-family: 'Roboto', sans-serif;
+   }
+
    main {
       width: 100vw;
       /* background-color: black; */
@@ -22,8 +26,6 @@
 
    }
 
-   
-   
 
    footer {
       width: 100%;
@@ -81,6 +83,17 @@
       object-fit: cover;
    }
 
+   .banner {
+      padding-top: 30px;
+   }
+
+   .banner-img {
+      height: 200px;
+      width: auto;
+      object-fit: cover;
+      border-radius: 10px;
+   }
+
 
   .dest-list {
       font-size: 16px;
@@ -122,10 +135,56 @@
    font-weight: bold;
 }
 
-.modal-dialog, .modal-content {
+/* .modal-dialog, .modal-content {
    height: 850px;
+} */
+
+/* .modal-content {
+   background-color: rgb(94, 108, 124);
+} */
+
+
+.modal-body {
+   padding-left: 40px;
+   padding-right: 40px;
+   
 }
 
-.modal-content {
-   background-color: rgb(231, 177, 177);
+
+h1.package-label {
+   font-size: 32px;
+}
+
+
+p.modal-description {
+   font-size: 16px;
+} 
+
+
+
+
+
+div.banner {
+   background-color: #262675;
+}
+
+.overview {
+   background-color: #f3a577;
+}
+
+.supply-list {
+   background-color: aqua;
+   font-size: 14px;
+}
+
+div#modal-dest-desc {
+   background-color: rgb(245, 91, 91);
+}
+
+div.description {
+   background-color: rgb(150, 190, 86);
+}
+
+h5#itineraryLabel {
+   font-size: 18px;
 }
