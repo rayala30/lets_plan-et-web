@@ -116,6 +116,7 @@
 
   .dest-description {
    font-size: 16px;
+   
 }
 
 .learn-more-btn {
@@ -292,3 +293,81 @@ div.itin-image-btn {
 .btn-delete::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+
+
+
+
+/* Responsive styles for smaller screens (iPhone breakpoint) */
+@media screen and (max-width: 768px) {
+
+   .dest-description {
+      font-size: 16px;
+      max-height: 68px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
+
+   .modal-content {
+      padding-left: 10px;
+      padding-right: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50px 1fr auto; /* Changed the footer row to 'auto' to accommodate button height */
+      grid-template-areas: 
+      "header"
+      "content"
+      "footer";
+   }
+
+   .modal-body {
+      padding-left: 10px;
+      padding-right: 10px;
+      grid-template-columns: 1fr;
+   }
+
+   /* Adjust font sizes for smaller screens */
+   h1.package-label {
+      font-size: 24px;
+   }
+
+   p.modal-description {
+      font-size: 14px;
+   }
+
+   /* Ensure the image scales down proportionally */
+   .banner-img {
+      max-width: 100%;
+      height: auto;
+   }
+
+   /* Center the button within the footer */
+   .modal-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent; /* Remove the gray background color */
+   }
+
+   div#right-group {
+      background-color: transparent;
+   }
+
+   div.modal-header {
+      background-color: transparent;
+   }
+
+   .supply-list {
+      padding-top: 25px;
+      font-size: 14px;
+   }
+
+   .dest-list {
+      padding-top: 25px;
+   }
+}
+
+
+
+
+
