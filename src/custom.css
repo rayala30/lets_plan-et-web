@@ -144,12 +144,29 @@
 } */
 
 
-.modal-body {
+.modal-content {
    padding-left: 40px;
-   padding-right: 40px;
+   padding-right: 0px;
+   display: grid;
+   grid-template-columns: 1fr 320px;
+   grid-template-rows:50px 1fr 100px;
+   grid-template-areas: 
+   ". header"
+   "content content"
+   ". footer";
    
 }
 
+.modal-body {
+   padding-left: 20px;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   grid-area: content;
+   display: grid;
+   grid-template-columns: 1fr 320px;
+   
+}
 
 h1.package-label {
    font-size: 32px;
@@ -160,31 +177,64 @@ p.modal-description {
    font-size: 16px;
 } 
 
-
-
-
-
-div.banner {
-   background-color: #262675;
+.modal-header {
+   grid-area: header;
+   background-color: #F1F1F1;
+   border-top-left-radius: 0;
+   
 }
 
+.modal-footer {
+   grid-area: footer;
+   background-color: #F1F1F1;
+   border-bottom-left-radius: 0;
+}
+
+
+
+
+/* div.banner {
+   
+} */
+
 .overview {
-   background-color: #f3a577;
+   padding-top: 30px;
 }
 
 .supply-list {
-   background-color: aqua;
    font-size: 14px;
 }
 
-div#modal-dest-desc {
-   background-color: rgb(245, 91, 91);
-}
+/* div#modal-dest-desc {
+   
+} */
 
-div.description {
-   background-color: rgb(150, 190, 86);
-}
+/* div.description {
+   
+} */
 
 h5#itineraryLabel {
    font-size: 18px;
+}
+
+div#left-group {
+   display: flex;
+   flex-direction: column;
+   padding-right: 20px;
+   justify-content: space-evenly;
+}
+
+div#right-group {
+   display: flex;
+   flex-direction: column;
+   background-color: #F1F1F1;
+   padding-left: 10px;
+   padding-right: 20px;
+   justify-content: space-evenly;
+
+}
+
+
+div#offcanvasRight {
+   width: 525px;
 }

@@ -125,7 +125,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#jupiterPackage">
                   Learn more
                 </button>
 
@@ -145,7 +145,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#saturnPackage">
                   Learn more
                 </button>
 
@@ -177,7 +177,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
                   Learn more
                 </button>
 
@@ -196,7 +196,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
                   Learn more
                 </button>
 
@@ -215,7 +215,7 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#aresPackage">
+                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#comingSoonPackage">
                   Learn more
                 </button>
 
@@ -249,27 +249,40 @@
   
         <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasRight">
           <div class="offcanvas-header">
-          <h5 id="itineraryLabel" class="text-uppercase fw-bold">Itinerary</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 id="itineraryLabel" class="text-uppercase fw-bold">Itinerary</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
+          
           <div class="offcanvas-body">
-            ...
+            <div class="container">
+              <div class="saved-package">
+                <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel">Ares Excursion</h1>
+                <img src="./src/images/mars-excursion.jpg" class="banner-img" alt="Mars">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+            </div>
+           
+
           </div>
+          
         </div>
       </div>
     </section>
 
 <!---PACKAGE MODALS------------------------------------------------------------------------------------------------------------------->  
 
-<div class="modal fade" id="marsPackage" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="marsPackage" tabindex="-1">
+  
   <div class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+    
     <div class="modal-content">
       <div class="modal-header border-0">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       
       <div class="modal-body" id="modal-grid">
-        <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel">Ares Excursion</h1>
+        <div id="left-group">
+          <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel">Ares Excursion</h1>
         <div class="banner">
           <img src="./src/images/mars-excursion.jpg" class="banner-img" alt="Mars">
         </div>
@@ -310,45 +323,50 @@
           </div>
   
         </div>
-        
-        <div id="modal-dest-desc">
-          <div class="dest-description">Destinations</div>
-          <div class="dest-list">Olympus Mons | Valles Marineris | Utopian Plain</div>
         </div>
-
-        <div class="supply-list">
-          <h6 class="fw-bold">What to Bring:</h6>
-          <ul>
-            <li>Non-perishable food and snacks</li>
-            <li>Personal radio and communication devices</li>
-            <li>Solar power banks</li>
-            <li>Books and entertainment for in-flight transit</li>
-            <li>Binoculars or telescope for exploration and observation</li>
-            <li>(Optional) Sunblock SPF-100</li>
-          </ul>
-
-          <h6 class="fw-bold">To be supplied:</h6>
-          <ul>
-            <li>Transportation</li>
-            <li>Lodging</li>
-            <li>Space suit and protective gear</li>
-            <li>Oxygen supply</li>
-            <li>Water purification</li>
-            <li>Meals</li>
-            <li>Emergency supplies</li>
-          </ul>
+        
+        <div id="right-group">
+          <div id="modal-dest-desc">
+            <div class="dest-description">Destinations</div>
+            <div class="dest-list">Olympus Mons | Valles Marineris | Utopian Plain</div>
+          </div>
+  
+          <div class="supply-list">
+            <h6 class="fw-bold">What to Bring:</h6>
+            <ul>
+              <li>Non-perishable food and snacks</li>
+              <li>Personal radio and communication devices</li>
+              <li>Solar power banks</li>
+              <li>Books and entertainment for in-flight transit</li>
+              <li>Binoculars or telescope for exploration and observation</li>
+              <li>(Optional) Sunblock SPF-100</li>
+            </ul>
+  
+            <h6 class="fw-bold">To be supplied:</h6>
+            <ul>
+              <li>Transportation</li>
+              <li>Lodging</li>
+              <li>Space suit and protective gear</li>
+              <li>Oxygen supply</li>
+              <li>Water purification</li>
+              <li>Meals</li>
+              <li>Emergency supplies</li>
+            </ul>
+          </div>
         </div>
 
 
       </div>
       
       <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
       </div>
     </div>
   </div>
 </div>
+
+
+
 
 <!---------------------------------------------------------------------------------------------------------------------->  
 
