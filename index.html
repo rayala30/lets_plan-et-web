@@ -61,8 +61,8 @@
         <div class="carousel-item active c-item" data-bs-interval="20000">
           <img src="src\images\Sol.png" class="d-block w-100 c-img" alt="Sol Space Cruiser">
           <div class="carousel-caption d-none d-md-block top-0" style="padding-top: 25%;">
-            <h3 style="font-size: 32px; font-weight: bold; padding-bottom: 30px;">Your one stop shop for planetary travel</h3>
-            <p style="font-size: 24px;">Let's plan-et together.</p>
+            <h3 style="font-size: 32px; font-weight: bold; padding-bottom: 30px; text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);">Your one-stop shop for planetary travel</h3>
+            <p style="font-size: 24px; text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);">Let's plan-et together.</p>
           </div>
         </div>
 
@@ -178,8 +178,8 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#lunarPackage">
-                  Coming Soon
+                <button type="button" class="btn btn-secondary learn-more-btn" data-bs-toggle="modal" data-bs-target="#lunarPackage" disabled>
+                  Coming soon
                 </button>
 
               </div>
@@ -197,8 +197,8 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#asteroidPackage">
-                  Coming Soon
+                <button type="button" class="btn btn-secondary learn-more-btn" data-bs-toggle="modal" data-bs-target="#asteroidPackage" disabled>
+                  Coming soon
                 </button>
 
               </div>
@@ -216,8 +216,8 @@
               </div>
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#neptunePackage">
-                  Coming Soon
+                <button type="button" class="btn btn-secondary learn-more-btn" data-bs-toggle="modal" data-bs-target="#neptunePackage" disabled>
+                  Coming soon
                 </button>
 
               </div>
@@ -376,7 +376,7 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn" data-bs-toggle="modal" data-bs-target="#addAlertModal">Save to Itinerary</button>
         </div>
       </div>
     </div>
@@ -479,7 +479,7 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn" data-bs-toggle="modal" data-bs-target="#addAlertModal">Save to Itinerary</button>
         </div>
       </div>
     </div>
@@ -582,13 +582,28 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn" data-bs-toggle="modal" data-bs-target="#addAlertModal">Save to Itinerary</button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+
+
+<!----ALERT MODALS------------------------------------------------------------------------------------------------------------------> 
+
+<!-- Modal -->
+<div class="modal fade" id="addAlertModal" tabindex="-1">
+  <div class="modal-dialog modal-sm">
+    <div class="alert-modal">
+      
+      <p class="alert-message">Saved to itinerary!</p>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      
+    </div>
+  </div>
+</div>
 
 <!---------------------------------------------------------------------------------------------------------------------->  
 

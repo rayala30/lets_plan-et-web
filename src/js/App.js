@@ -72,14 +72,17 @@ async function populateCarouselImage() {
 
         const carouselName = document.createElement('h3');
         carouselName.setAttribute('class', 'text-uppercase fw-bold text-start');
+        carouselName.setAttribute('style', 'text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);');
         carouselName.innerText = name;
 
         const carouselPlanet = document.createElement('h4');
         carouselPlanet.setAttribute('class', 'text-start')
+        carouselPlanet.setAttribute('style', 'text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);');
         carouselPlanet.innerText = planet;
 
         const carouselFact = document.createElement('p');
         carouselFact.setAttribute('class', 'text-start')
+        carouselFact.setAttribute('style', 'text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.90);');
         carouselFact.innerText = fact;
 
 

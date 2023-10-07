@@ -118,7 +118,8 @@
    
 }
 
-.learn-more-btn {
+/* "button:active:focus" overrides default blue click active focus color */
+.learn-more-btn, .learn-more-btn:active:focus {
    background-color: #ff9f2e;
    border-color: #ff9f2e;
    color: black;
@@ -135,7 +136,7 @@
    
 }
 
-.save-itin-btn {
+.save-itin-btn, .save-itin-btn:active:focus {
    background-color: #ff9f2e;
    border-color: #ff9f2e;
    color: black;
@@ -149,14 +150,25 @@
    font-weight: bold;
 }
 
-/* .modal-dialog, .modal-content {
-   height: 850px;
-} */
 
-/* .modal-content {
-   background-color: rgb(94, 108, 124);
-} */
+.alert-modal {
+   padding-left: 12px;
+   padding-right: 12px;
+   width: 300px;
+   height: 75px;
+   background-color: white;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
+p.alert-message {
+   font-size: 18px;
+   margin: 0;
+   display: flex;
+   padding-right: 20px;
+}
 
 .modal-content {
    padding-left: 40px;
@@ -205,10 +217,6 @@ p.modal-description {
 }
 
 
-.offcanvas {
-   background-color: #ffe5c6;
-}
-
 
 .overview {
    padding-top: 30px;
@@ -222,6 +230,7 @@ p.modal-description {
 
 h5#itineraryLabel {
    font-size: 18px;
+   padding-left: 10px;
 }
 
 div#left-group {
@@ -255,7 +264,9 @@ div.itin-image-btn {
    column-gap: 20px;
 }
 
-
+.btn-close {
+   color: black !important;
+}
 
 .btn-delete {
    position: relative;

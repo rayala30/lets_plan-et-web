@@ -55,7 +55,7 @@ function reassignItemIds() {
         // Create a div for package items
         const packageElement = document.createElement('div');
         packageElement.setAttribute('class', 'package-elements');
-        packageElement.setAttribute('style', 'border-bottom: 1px solid; padding-bottom: 15px;');
+        packageElement.setAttribute('style', 'border-bottom: 1px solid gray; padding-top: 25px; padding-bottom: 25px;');
         packageElement.id = item.id;
 
 
