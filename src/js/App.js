@@ -6,23 +6,22 @@ import { addToItinerary, removeItemFromItinerary, displayItinerary} from "./Itin
 
 // Add event listeners for page
 document.addEventListener('DOMContentLoaded', () => {
-    // Save button will be in Trip Package Card
-    document.querySelector('.save-itin-btn').addEventListener('click', (event) => {
-        // Find parent element
-        const modalContent = event.target.closest('.modal-content');
+   
 
-        if (modalContent) {
-            // Extract title and image source from modalContent
-            const title = modalContent.querySelector('.package-label').innerText;
-            const imageSrc = modalContent.querySelector('.banner-img').src;
-
-            // Call addToItinerary function
-            addToItinerary(title, imageSrc);
-
-            displayItinerary();
-            
-        }
+    // Add event listeners for all "Save to Itinerary" buttons. Query selection will create an array of Save Itinerary buttons
+    const saveButtons = document.querySelectorAll('.save-itin-btn');
+    saveButtons.forEach((button) => {
+        button.addEventListener('click', (event) => {
+            const modalContent = event.target.closest('.modal-content');
+            if (modalContent) {
+                const title = modalContent.querySelector('.package-label').innerText;
+                const imageSrc = modalContent.querySelector('.banner-img').src;
+                addToItinerary(title, imageSrc);
+                displayItinerary();
+            }
+        });
     });
+ 
 
     // Get the current saved package container
     const itineraryContainer = document.querySelector('.saved-package');

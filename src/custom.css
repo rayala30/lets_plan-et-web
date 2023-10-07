@@ -92,15 +92,16 @@
    }
 
    .banner-img {
-      height: 200px;
-      width: auto;
+      height: auto;
+      width: 400px;
       object-fit: cover;
       border-radius: 10px;
    }
 
    .offcanvas-img {
       height: 200px;
-      display: flex;
+      width: 300px;
+      object-fit: cover;
       border-radius: 10px;
       flex-direction: row;
    }
@@ -336,6 +337,7 @@ div.itin-image-btn {
    }
 
    p.modal-description {
+      padding-top: 10px;
       font-size: 14px;
    }
 

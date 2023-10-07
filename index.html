@@ -62,7 +62,7 @@
           <img src="src\images\Sol.png" class="d-block w-100 c-img" alt="Sol Space Cruiser">
           <div class="carousel-caption d-none d-md-block top-0" style="padding-top: 25%;">
             <h3 style="font-size: 32px; font-weight: bold; padding-bottom: 30px;">Your one stop shop for planetary travel</h3>
-            <p>Let's plan-et together.</p>
+            <p style="font-size: 24px;">Let's plan-et together.</p>
           </div>
         </div>
 
@@ -179,7 +179,7 @@
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#lunarPackage">
-                  Learn more
+                  Coming Soon
                 </button>
 
               </div>
@@ -198,7 +198,7 @@
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#asteroidPackage">
-                  Learn more
+                  Coming Soon
                 </button>
 
               </div>
@@ -217,7 +217,7 @@
               <div class="w-100 d-flex justify-content-end">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary learn-more-btn" data-bs-toggle="modal" data-bs-target="#neptunePackage">
-                  Learn more
+                  Coming Soon
                 </button>
 
               </div>
@@ -256,12 +256,7 @@
           
           <div class="offcanvas-body">
 
-            <!-- Itinerary Toast -->
-            <div id="itinerary-toast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-body">
-                <!-- Toast message will be displayed here -->
-              </div>
-            </div>
+
 
             <div class="container">
               <div class="saved-package">
@@ -381,7 +376,7 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn" id="marsPackageModal">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
         </div>
       </div>
     </div>
@@ -484,7 +479,110 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn" id="marsPackageModal">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="saturnPackage" tabindex="-1">
+  
+  <div class="container">
+    <div class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        
+        <div class="modal-body" id="modal-grid">
+          <div id="left-group">
+            <h1 class="modal-title fs-5 fw-bold package-label" id="saturnPackageLabel">Cronos Flyby</h1>
+          <div class="banner">
+            <img src="./src/images/saturn-flyby.png" class="banner-img" alt="Saturn">
+          </div>
+          <div class="description" id="jupiter-trip-desc">
+            <h5 class="fw-bold pt-4">Immerse yourself in the grandeur of Saturn</h5>
+            <p class="my-2 modal-description">Fly over the awe-inspiring beauty of Saturn’s magnificent rings. As you venture closer to the planet, prepare to be captivated by the unique splendor of the planet’s hexagonal north pole. </p>
+            <p class="my-2 modal-description">On your return, set your sights on Titan, Saturn’s largest moon, where you’ll witness the unique landscape of methane lakes and ice mountains in passing.</p>
+            <p class="my-2 modal-description">This journey promises an unforgettable experience as you immerse yourself in the mysteries and wonders of the Saturnian system.</p>
+
+          </div>
+  
+          <div class="overview">
+            <div class="container d-flex align-items-center h-100">
+              <div class="row w-100 text-center">
+                <div class="general-property col-4"> 
+                  <i class="bi bi-thermometer-half"></i>
+                  Avg. Temp.
+                  <div class="planet-property fw-bold">
+                    -140°C
+                  </div>
+                </div>
+      
+                <div class="general-property col-4"> 
+                  <i class="bi bi-sun"></i>
+                  1 Sol
+                  <div class="planet-property fw-bold">
+                    ~ 10H
+                  </div>
+                </div>
+      
+                <div class="general-property col-4"> 
+                  <i class="bi bi-rocket"></i>
+                  Duration
+                  <div class="planet-property fw-bold">
+                    6Y 5M
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+          </div>
+          
+          <div id="right-group">
+            <div id="modal-dest-desc">
+              <div class="dest-description">Destinations</div>
+              <div class="dest-list">
+                <ul class="modal-sites">
+                  <li class="list-site" >Saturn's Rings</li>
+                  <li class="list-site">Titan</li>
+                  <li class="list-site">Hexagon North Pole</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="supply-list">
+              <h6 class="fw-bold">What to Bring:</h6>
+              <ul>
+                <li>Non-perishable food and snacks</li>
+                <li>Solar power banks</li>
+                <li>Books and entertainment for in-flight transit</li>
+                <li>Binoculars or telescope for exploration and observation</li>
+                <li>Camera to document your journey!</li>
+              </ul>
+    
+              <h6 class="fw-bold">To be supplied:</h6>
+              <ul>
+                <li>Transportation</li>
+                <li>Lodging</li>
+                <li>Space suit and protective gear</li>
+                <li>Oxygen supply</li>
+                <li>Water purification</li>
+                <li>Meals</li>
+                <li>Emergency supplies</li>
+              </ul>
+            </div>
+          </div>
+  
+  
+        </div>
+        
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
         </div>
       </div>
     </div>
