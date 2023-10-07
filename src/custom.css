@@ -300,6 +300,18 @@ div.itin-image-btn {
 
 
 
+/* Responsive styles for large screens (Screen breakpoint) */
+@media screen and (max-width: 1400px) {
+
+   .dest-description {
+      font-size: 16px;
+      max-height:100px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
+
+}
 
 /* Responsive styles for smaller screens (iPhone breakpoint) */
 @media screen and (max-width: 768px) {
