@@ -43,6 +43,7 @@
       filter: brightness(0.8);
    }
 
+
    .c-overview {
       height: 200px;
       background-color: rgb(57, 29, 83);
@@ -52,9 +53,8 @@
    
 
    #ship-facts {
-      height: 800px;
-      width: 100%;
       text-align: center;
+      padding-bottom: 20px;;
    }
 
    #cruise-ship {

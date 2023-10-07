@@ -1,17 +1,49 @@
 import {getSites} from "./PlanetService.js";
+import { addToItinerary, removeItemFromItinerary, displayItinerary} from "./ItineraryService.js";
 
-
-let cardData = {};
 
 
 
 // Add event listeners for page
 document.addEventListener('DOMContentLoaded', () => {
     // Save button will be in Trip Package Card
-    // document.getElementById('add_btn').addEventListener('click', addPackage);
-    // document.getElementById('delete_btn').addEventListener('click', removePackage);
-    // document.getElementById('summary_btn').addEventListener('click', generateTripSummary);
-    // document.getElementById('view-itin-btn').addEventListener('click', displayItinerary);
+    document.querySelector('.save-itin-btn').addEventListener('click', (event) => {
+        // Find parent element
+        const modalContent = event.target.closest('.modal-content');
+
+        if (modalContent) {
+            // Extract title and image source from modalContent
+            const title = modalContent.querySelector('.package-label').innerText;
+            const imageSrc = modalContent.querySelector('.banner-img').src;
+
+            // Call addToItinerary function
+            addToItinerary(title, imageSrc);
+
+            displayItinerary();
+            
+        }
+    });
+
+    // Get the current saved package container
+    const itineraryContainer = document.querySelector('.saved-package');
+
+    // Remove item from itinerary
+    itineraryContainer.addEventListener('click', (event) => {
+        //
+        if (event.target.classList.contains('btn-delete')) {
+            // Get the unique ID of the clicked item's parent
+            const itemId = event.target.closest('.package-elements').id;
+        
+            // Call the removeItemFromItinerary function with the item ID
+            removeItemFromItinerary(itemId);
+
+            displayItinerary();
+        }
+    });
+
+
+
+    document.getElementById('view-itin-btn').addEventListener('click', displayItinerary);
 
     
     populateCarouselImage();
@@ -40,13 +72,15 @@ async function populateCarouselImage() {
         carouselCaptionParent.setAttribute('class', 'carousel-caption d-none d-md-block');
 
         const carouselName = document.createElement('h3');
-        carouselName.setAttribute('class', 'text-uppercase');
+        carouselName.setAttribute('class', 'text-uppercase fw-bold text-start');
         carouselName.innerText = name;
 
         const carouselPlanet = document.createElement('h4');
+        carouselPlanet.setAttribute('class', 'text-start')
         carouselPlanet.innerText = planet;
 
         const carouselFact = document.createElement('p');
+        carouselFact.setAttribute('class', 'text-start')
         carouselFact.innerText = fact;
 
 
@@ -71,29 +105,8 @@ async function populateCarouselImage() {
 
     });
 
-    // console.log(sites);
+    
 }
 
 
-function addPackage() {
 
-}
-
-
-function removePackage() {
-
-}
-
-function displayItinerary() {
-
-}
-
-
-function generateTripSummary() {
-
-}
-
-
-function calculateTotalTripTime() {
-
-}

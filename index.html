@@ -22,6 +22,7 @@
   <header>
     <nav class="navbar navbar-expand-sm bg-transparent fixed-top" data-bs-theme="dark" style="background-color: black;">
       <div class="container-fluid">
+        <img src="./src/images/LetsPlanet-Logo.png" alt="Let's Plan-et Logo" style="height: 50px; padding-right: 15px;">
         <a class="navbar-brand text-uppercase fw-bold" href="#">Let's Plan-et!</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
@@ -59,9 +60,9 @@
 
         <div class="carousel-item active c-item" data-bs-interval="20000">
           <img src="src\images\Sol.png" class="d-block w-100 c-img" alt="Sol Space Cruiser">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Sol</h3>
-            <p>Some representative placeholder content for the first slide.</p>
+          <div class="carousel-caption d-none d-md-block top-0" style="padding-top: 25%;">
+            <h3 style="font-size: 32px; font-weight: bold; padding-bottom: 30px;">Your one stop shop for planetary travel</h3>
+            <p>Let's plan-et together.</p>
           </div>
         </div>
 
@@ -234,8 +235,8 @@
 
     <section id="ship-facts">
       <h2 class="text-center my-5" style="color: white;">Our Space Cruiser</h2>
-      <div class="container">
-        <img src="./src/images/cruise-ship2.png" alt="" id="cruise-ship">
+      <div class="container-fluid pb-4">
+        <img src="./src/images/SpaceCruiserInfo.png" alt="" id="cruise-ship">
 
       </div>
     </section>
@@ -254,14 +255,24 @@
           </div>
           
           <div class="offcanvas-body">
+
+            <!-- Itinerary Toast -->
+            <div id="itinerary-toast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-body">
+                <!-- Toast message will be displayed here -->
+              </div>
+            </div>
+
             <div class="container">
               <div class="saved-package">
 
-                <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel" style="text-align: left;">Ares Excursion</h1>
-                <div class="itin-image-btn">
-                  <img src="./src/images/mars-excursion.jpg" class="offcanvas-img" alt="Mars">
-                  <button type="button" class="btn-delete" data-bs-dismiss=""></button>
-                </div>
+                <!-- <div class="package-elements">
+                  <h1 class="modal-title fs-5 fw-bold package-label" id="marsPackageLabel" style="text-align: left;">Ares Excursion</h1>
+                  <div class="itin-image-btn">
+                    <img src="./src/images/mars-excursion.jpg" class="offcanvas-img" alt="Mars">
+                    <button type="button" class="btn-delete" data-bs-dismiss=""></button>
+                  </div>
+                </div> -->
 
               </div>
             </div>
@@ -318,9 +329,9 @@
       
                 <div class="general-property col-4"> 
                   <i class="bi bi-rocket"></i>
-                  Travel Time
+                  Duration
                   <div class="planet-property fw-bold">
-                    2 Earth Years
+                    2Y
                   </div>
                 </div>
               </div>
@@ -370,7 +381,7 @@
         </div>
         
         <div class="modal-footer border-0">
-          <button type="button" class="btn btn-primary save-itin-btn">Save to Itinerary</button>
+          <button type="button" class="btn btn-primary save-itin-btn" id="marsPackageModal">Save to Itinerary</button>
         </div>
       </div>
     </div>
@@ -378,6 +389,107 @@
 </div>
 
 
+<div class="modal fade" id="jupiterPackage" tabindex="-1">
+  
+  <div class="container">
+    <div class="modal-dialog modal-dialog-centered modal-lg custom-modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        
+        <div class="modal-body" id="modal-grid">
+          <div id="left-group">
+            <h1 class="modal-title fs-5 fw-bold package-label" id="jupiterPackageLabel">Zeus Orbit</h1>
+          <div class="banner">
+            <img src="./src/images/jupiter-flyby.png" class="banner-img" alt="Jupiter">
+          </div>
+          <div class="description" id="jupiter-trip-desc">
+            <h5 class="fw-bold pt-4">Journey to Jupiter</h5>
+            <p class="my-2 modal-description">Fall into orbit as you explore the mesmerizing Galilean Satellites—home to Io’s volcanic wonders, Europa’s mysterious subsurface ocean, Ganymede’s immense size, and Callisto’s rugged beauty.</p>
+            <p class="my-2 modal-description">Witness the awe-inspiring Great Red Spot, a centuries-old storm larger than Earth itself.</p>
+            <p class="my-2 modal-description">Join this celestial odyssey and discover the wonders of Jupiter like never before!</p>
+
+          </div>
+  
+          <div class="overview">
+            <div class="container d-flex align-items-center h-100">
+              <div class="row w-100 text-center">
+                <div class="general-property col-4"> 
+                  <i class="bi bi-thermometer-half"></i>
+                  Avg. Temp.
+                  <div class="planet-property fw-bold">
+                    -110°C
+                  </div>
+                </div>
+      
+                <div class="general-property col-4"> 
+                  <i class="bi bi-sun"></i>
+                  1 Sol
+                  <div class="planet-property fw-bold">
+                    ~ 10H
+                  </div>
+                </div>
+      
+                <div class="general-property col-4"> 
+                  <i class="bi bi-rocket"></i>
+                  Duration
+                  <div class="planet-property fw-bold">
+                    1Y 9M 9D
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+          </div>
+          
+          <div id="right-group">
+            <div id="modal-dest-desc">
+              <div class="dest-description">Destinations</div>
+              <div class="dest-list">
+                <ul class="modal-sites">
+                  <li class="list-site" >Galilean Satellites</li>
+                  <li class="list-site">The Great Red Spot</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="supply-list">
+              <h6 class="fw-bold">What to Bring:</h6>
+              <ul>
+                <li>Non-perishable food and snacks</li>
+                <li>Solar power banks</li>
+                <li>Books and entertainment for in-flight transit</li>
+                <li>Binoculars or telescope for exploration and observation</li>
+                <li>Camera to document your journey!</li>
+              </ul>
+    
+              <h6 class="fw-bold">To be supplied:</h6>
+              <ul>
+                <li>Transportation</li>
+                <li>Lodging</li>
+                <li>Space suit and protective gear</li>
+                <li>Oxygen supply</li>
+                <li>Water purification</li>
+                <li>Meals</li>
+                <li>Emergency supplies</li>
+              </ul>
+            </div>
+          </div>
+  
+  
+        </div>
+        
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-primary save-itin-btn" id="marsPackageModal">Save to Itinerary</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!---------------------------------------------------------------------------------------------------------------------->  
