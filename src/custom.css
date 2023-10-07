@@ -44,12 +44,6 @@
    }
 
 
-   .c-overview {
-      height: 200px;
-      background-color: rgb(57, 29, 83);
-      color: red;
-   }
-
    
 
    #ship-facts {
@@ -211,11 +205,10 @@ p.modal-description {
 }
 
 
+.offcanvas {
+   background-color: #ffe5c6;
+}
 
-
-/* div.banner {
-   
-} */
 
 .overview {
    padding-top: 30px;
@@ -225,13 +218,7 @@ p.modal-description {
    font-size: 14px;
 }
 
-/* div#modal-dest-desc {
-   
-} */
 
-/* div.description {
-   
-} */
 
 h5#itineraryLabel {
    font-size: 18px;
