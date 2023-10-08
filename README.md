@@ -34,9 +34,12 @@ Visit [Let's Plan-et](https://rayala30.github.io/lets_plan-et-web/) to start exp
 
 - **Bootstrap**: Bootstrap plays a pivotal role in creating a responsive web design, guaranteeing that our website is accessible and visually appealing on various devices.
 
-- **Railway**: Our cloud-hosted server on Railway houses the database where we store vital information about solar system sites. This ensures that users can access the latest and most accurate data.
+- **Railway**: Our cloud-hosted server on Railway houses the database where we store vital information about solar system sites. This ensures that users can access the latest and most accurate solar system data.
 
 - **PostgreSQL**: PostgreSQL is the reliable relational database management system we use to store and manage data related to solar system sites. It provides the foundation for the comprehensive package information available to users.
 
 These technologies come together harmoniously to create a powerful platform, allowing Let's Plan-et to offer an exceptional experience to space enthusiasts as they explore and plan their interstellar adventures.
 
+## Preview
+
+![Alt text](src/images/Lets-Planet-preview.png)
